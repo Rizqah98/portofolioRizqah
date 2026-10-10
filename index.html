@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizqah Maulidiyah - Portofolio Profesional</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            DEFAULT: '#0F172A',
+                            dark: '#090D16',
+                            light: '#1E293B',
+                        },
+                        gold: {
+                            DEFAULT: '#D4AF37',
+                            light: '#E6C55C',
+                            dark: '#AA8C2C',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-gold selection:text-navy">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur-md text-white border-b border-slate-800 shadow-sm transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="w-8 h-8 rounded-lg bg-gold text-navy font-black flex items-center justify-center text-sm shadow">RM</span>
+                <span>Rizqah Maulidiyah</span>
+            </a>
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-gold transition">Tentang Saya</a>
+                <a href="#experience" class="hover:text-gold transition">Pengalaman & Simulasi</a>
+                <a href="#skills" class="hover:text-gold transition">Keahlian</a>
+                <a href="#education" class="hover:text-gold transition">Pendidikan & Sertifikat</a>
+                <a href="#contact" class="bg-gold text-navy hover:bg-gold-light px-4 py-2 rounded-lg font-semibold shadow transition transform hover:-translate-y-0.5">Kontak</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-slate-300 hover:text-white focus:outline-none p-2" aria-label="Menu">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-dark border-b border-slate-800 px-4 pt-2 pb-4 space-y-3">
+            <a href="#about" class="block py-2 text-slate-300 hover:text-gold">Tentang Saya</a>
+            <a href="#experience" class="block py-2 text-slate-300 hover:text-gold">Pengalaman & Simulasi</a>
+            <a href="#skills" class="block py-2 text-slate-300 hover:text-gold">Keahlian</a>
+            <a href="#education" class="block py-2 text-slate-300 hover:text-gold">Pendidikan & Sertifikat</a>
+            <a href="#contact" class="block py-2 text-gold font-semibold">Kontak</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 bg-gradient-to-br from-navy via-navy-light to-navy-dark text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 bg-gold/10 border border-gold/30 px-3 py-1.5 rounded-full text-gold text-xs font-semibold mb-6">
+                    <i class="fa-solid fa-briefcase"></i> Staff Administrasi & Pengolahan Data
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                    Meningkatkan Efisiensi & Akurasi Data Melalui <span class="text-gold">Ketelitian Operasional</span>
+                </h1>
+                <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
+                            Halo, Saya <strong class="text-navy-900 font-semibold">Rizqah Maulidiyah</strong>, profesional administrasi berlatar belakang gabungan <span class="text-navy-900 font-medium">SMK Akuntansi</span> & <span class="text-navy-900 font-medium">S1 Teknik Informatika</span>. Memilki pengalaman lebih dari 4 tahun dalam pengelolaan dokumen kantor, rekonsiliasi omset harian, pengasipan berkas, administrasi staf, serta penguasaan <span class="text-navy-900 font-medium">Microsoft Excel Advanced (Pivot Table, VLOOKUP, HLOOKUP)</span>.
+                        </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+                    <a href="#contact" class="w-full sm:w-auto bg-gold hover:bg-gold-light text-navy px-8 py-3.5 rounded-xl font-bold shadow-lg transition transform hover:-translate-y-0.5 text-center flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i> Hubungi Saya
+                    </a>
+                    <a href="#experience" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-3.5 rounded-xl font-semibold transition text-center flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-arrow-down"></i> Lihat Pengalaman & Simulasi
+                    </a>
+                </div>
+            </div>
+            <!-- Profile Photo Container -->
+            <div class="w-full md:w-96 flex justify-center">
+                <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-2xl bg-gradient-to-tr from-gold to-navy-light p-1 shadow-2xl">
+                    <div class="w-full h-full bg-slate-900 rounded-2xl flex flex-col items-center justify-center text-center relative overflow-hidden">
+                        <img src="me.jpeg" alt="Rizqah Maulidiyah" class="w-full h-full object-cover rounded-2xl" onerror="this.src='https://placehold.co/400x400/0F172A/D4AF37?text=Rizqah+Maulidiyah'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-navy tracking-tight mb-4">Tentang Saya</h2>
+                <div class="w-16 h-1 bg-gold mx-auto rounded-full mb-4"></div>
+                <p class="text-slate-600 text-base sm:text-lg">Dedikasi tinggi terhadap integritas data, kepatuhan SOP, dan manajemen operasional yang optimal.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 border border-slate-200/80 p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-gold/10 text-gold flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Audit & Kontrol</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        Berpengalaman melakukan external & operational audit F&B, stock opname berkala, pemeriksaan sales report, dan kontrol kualitas untuk menekan selisih stok hingga 30%.
+                    </p>
+                </div>
+                <div class="bg-slate-50 border border-slate-200/80 p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-gold/10 text-gold flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-file-excel"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Administrasi & Data</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        Mahir mengoperasikan Microsoft Excel tingkat lanjut (Pivot Table, VLOOKUP), Google Workspace, serta pencatatan keuangan dan verifikasi transaksi harian yang akurat.
+                    </p>
+                </div>
+                <div class="bg-slate-50 border border-slate-200/80 p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-gold/10 text-gold flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Koordinasi & Layanan</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        Memiliki komunikasi harian yang baik dengan tim dan nasabah/responden, terbiasa berkoordinasi lintas cabang serta petugas lapangan (BPS) dengan target tinggi.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Projects Section -->
+    <section id="experience" class="py-20 bg-slate-100/70 border-t border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-navy tracking-tight mb-4">Pengalaman & Proyek Kerja</h2>
+                <div class="w-16 h-1 bg-gold mx-auto rounded-full mb-4"></div>
+                <p class="text-slate-600 text-base sm:text-lg">Rekam jejak profesional dalam audit operasional, sensus data, manajemen toko, dan perbankan.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                
+                <!-- Card 1: BPS -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+                            <span class="bg-navy/10 text-navy font-semibold px-3 py-1 rounded-full text-xs">Jun 2026 – Agu 2026</span>
+                            <span class="text-xs font-bold text-gold uppercase tracking-wider bg-gold/10 px-2.5 py-1 rounded-md">Pencacah Lapangan</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy mb-1">Mitra Statistik (Petugas Sensus Ekonomi 2026)</h3>
+                        <p class="text-slate-500 font-medium text-sm mb-4">Badan Pusat Statistik (BPS) Kota Depok</p>
+                        <ul class="space-y-2.5 text-slate-600 text-sm mb-6">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold mt-1"></i>
+                                <span>Melaksanakan pendataan & wawancara door-to-door untuk Sensus Ekonomi 2026 di Kecamatan Cinere.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold mt-1"></i>
+                                <span>Memverifikasi, mengumpulkan, & menginput data pelaku usaha/responden secara akurat sesuai metodologi BPS.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold mt-1"></i>
+                                <span>Menyelesaikan target pencacahan tepat waktu dengan koordinasi lintas tim & pengurus wilayah.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-2">
+                        <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">Data Verification</span>
+                        <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">Wawancara Lapangan</span>
+                    </div>
+                </div>
+
+                <!-- Card 2: Es Teler 77 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+                            <span class="bg-navy/10 text-navy font-semibold px-3 py-1 rounded-full text-xs">Des 2021 – Jul 2024</span>
+                            <span class="text-xs font-bold text-gold uppercase tracking-wider bg-gold/10 px-2.5 py-1 rounded-md">External Auditor F&B</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy mb-1">External Auditor F&B Es Teler 77</h3>
+                        <p class="text-slate-500 font-medium text-sm mb-4">Cahaya Konsultan</p>
+                        <ul class="space-y-2.5 text-slate-600 text-sm mb-6">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold mt-1"></i>
+                                <span>Menginput omset harian 10 cabang via Google Sheet & Excel (Pivot Table, VLOOKUP) tepat sebelum jam tutup.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold mt-1"></i>
+                                <span>Meningkatkan akurasi data stok hingga <strong>65%</strong> & mengurangi kehilangan stok hingga <strong>30%</strong> via Stock Opname berkala.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold mt-1"></i>
+                                <span>Melakukan inspeksi SOP, kebersihan kitchen/bar/cashier, rotasi FIFO, & audit laporan online food (Grab/GoFood/Shopee).</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-2">
+                        <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">Excel (Pivot & VLOOKUP)</span>
+                        <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">Operational Audit</span>
+                        <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">Stock Management</span>
+                    </div>
+                </div>
+
+                <!-- Card 3: Lamonte Shop -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+                            <span class="bg-navy/10 text-navy font-semibold px-3 py-1 rounded-full text-xs">Nov 2019 – Des 2020</span>
+                            <span class="text-xs font-bold text-gold uppercase tracking-wider bg-gold/10 px-2.5 py-1 rounded-md">Admin & Editor</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy mb-1">Admin - Editor Online Shop</h3>
+                        <p class="text-slate-500 font-medium text-sm mb-4">Lamonte Shop</p>
+                        <ul class="space-y-2.5 text-slate-600 text-sm mb-6">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold mt-1"></i>
+                                <span>Mengedit 3 materi digital per minggu menggunakan Photoshop & Canva untuk Instagram & online shop.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold mt-1"></i>
+                                <span>Memastikan keakuratan deskripsi produk serta melakukan pencadangan data berkala pada cloud & local storage.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold mt-1"></i>
+                                <span>Mengelola jadwal timeline proyek dan pembaruan tema online shop sesuai event yang sedang berlangsung.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-2">
+                        <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">Canva</span>
+                        <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">Photoshop</span>
+                        <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">Digital Content</span>
+                    </div>
+                </div>
+
+                <!-- Card 4: BSI Teller -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+                            <span class="bg-navy/10 text-navy font-semibold px-3 py-1 rounded-full text-xs">Okt 2017 – Okt 2018</span>
+                            <span class="text-xs font-bold text-gold uppercase tracking-wider bg-gold/10 px-2.5 py-1 rounded-md">Kriya Teller</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy mb-1">Kriya Teller</h3>
+                        <p class="text-slate-500 font-medium text-sm mb-4">PT. Bank Syariah Indonesia</p>
+                        <ul class="space-y-2.5 text-slate-600 text-sm mb-6">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold mt-1"></i>
+                                <span>Menyiapkan uang deposit min. 20 transaksi teller/hari menggunakan Temenos T24, kas <strong>balance dengan selisih 0</strong>.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold mt-1"></i>
+                                <span>Menangani layanan konter: setor, tarik tunai, transfer, pencairan cek/bilyet giro, penukaran uang, & pembayaran tagihan.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold mt-1"></i>
+                                <span>Memelihara catatan transaksi akurat sesuai SOP perbankan serta berkoordinasi menyelesaikan kendala nasabah.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-2">
+                        <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">Cash Handling</span>
+                        <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">Temenos T24</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Interactive Simulation Tool: Simulasi Omset & Rekonsiliasi 10 Cabang -->
+            <div class="bg-navy text-white rounded-3xl p-8 sm:p-10 shadow-xl border border-slate-800 relative overflow-hidden">
+                <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                <div class="relative z-10">
+                    <div class="text-center max-w-2xl mx-auto mb-8">
+                        <span class="bg-gold/20 text-gold text-xs font-bold px-3.5 py-1.5 rounded-full border border-gold/40">Alat Bantu Kerja Interaktif</span>
+                        <h3 class="text-2xl sm:text-3xl font-bold mt-3 mb-2">Simulator Rekonsiliasi Omset 10 Cabang</h3>
+                        <p class="text-slate-300 text-sm">Simulasikan pencatatan dan pemeriksaan omset harian dari Settlement EDC Bank dan aplikasi Online Food (Grab/GoFood/Shopee) untuk 10 cabang outlet F&B.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 bg-slate-900/80 p-6 rounded-2xl border border-slate-800">
+                        <!-- Input Form -->
+                        <div class="space-y-4 lg:col-span-1">
+                            <h4 class="font-bold text-gold text-base flex items-center gap-2">
+                                <i class="fa-solid fa-calculator"></i> Parameter Cabang Outlet
+                            </h4>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Pilih Cabang (10 Cabang)</label>
+                                <select id="sim-branch" onchange="updateDefaultBranchOmset()" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2.5 text-white text-sm focus:outline-none focus:border-gold">
+                                    <option value="Cabang Cinere Utama">01. Cabang Cinere Utama</option>
+                                    <option value="Cabang Pondok Labu">02. Cabang Pondok Labu</option>
+                                    <option value="Cabang Depok Town Center">03. Cabang Depok Town Center</option>
+                                    <option value="Cabang Margo City">04. Cabang Margo City</option>
+                                    <option value="Cabang Margonda Raya">05. Cabang Margonda Raya</option>
+                                    <option value="Cabang Lebak Bulus">06. Cabang Lebak Bulus</option>
+                                    <option value="Cabang Cilandak Town Square">07. Cabang Cilandak Town Square</option>
+                                    <option value="Cabang Fatmawati">08. Cabang Fatmawati</option>
+                                    <option value="Cabang ITC Fatmawati">09. Cabang ITC Fatmawati</option>
+                                    <option value="Cabang Senayan City">10. Cabang Senayan City</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Omset Settlement EDC (Rp)</label>
+                                <input type="number" id="sim-edc" value="3500000" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2.5 text-white text-sm focus:outline-none focus:border-gold" placeholder="Contoh: 3500000">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Omset Online Food (Grab/GoFood/Shopee) (Rp)</label>
+                                <input type="number" id="sim-online" value="4200000" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2.5 text-white text-sm focus:outline-none focus:border-gold" placeholder="Contoh: 4200000">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Omset Tunai Kasir Fisik (Rp)</label>
+                                <input type="number" id="sim-cash" value="2800000" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2.5 text-white text-sm focus:outline-none focus:border-gold" placeholder="Contoh: 2800000">
+                            </div>
+                            <button onclick="runOmsetSimulation()" class="w-full bg-gold hover:bg-gold-light text-navy font-bold py-3 rounded-xl text-sm transition shadow">
+                                Proses Rekonsiliasi & Audit Omset
+                            </button>
+                        </div>
+
+                        <!-- Output Results -->
+                        <div class="lg:col-span-2 bg-slate-950 p-6 rounded-xl border border-slate-800 flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-4">
+                                    <h4 class="font-bold text-white text-sm flex items-center gap-2">
+                                        <i class="fa-solid fa-file-invoice-dollar text-gold"></i> Laporan Audit & Rekonsiliasi Harian
+                                    </h4>
+                                    <span id="sim-timestamp" class="text-xs text-slate-400">Belum disimulasikan</span>
+                                </div>
+                                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+                                    <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
+                                        <span class="text-xs text-slate-400 block mb-1">Total Omset Cabang</span>
+                                        <span id="out-total" class="text-lg font-extrabold text-gold">Rp 10.500.000</span>
+                                    </div>
+                                    <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
+                                        <span class="text-xs text-slate-400 block mb-1">Status Rekonsiliasi</span>
+                                        <span id="out-status" class="text-sm font-bold text-emerald-400">Balance / Valid</span>
+                                    </div>
+                                    <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
+                                        <span class="text-xs text-slate-400 block mb-1">Akurasi Input Excel</span>
+                                        <span id="out-accuracy" class="text-lg font-extrabold text-white">100%</span>
+                                    </div>
+                                </div>
+                                <div class="space-y-2 text-xs text-slate-300 bg-slate-900/60 p-4 rounded-xl border border-slate-800">
+                                    <p class="font-semibold text-gold mb-1">Rincian Komponen Omset & Catatan Auditor:</p>
+                                    <p id="out-notes">Pilih cabang outlet di sebelah kiri dan masukkan angka omset Settlement EDC serta Online Food, lalu klik tombol "Proses Rekonsiliasi & Audit Omset".</p>
+                                </div>
+                            </div>
+                            <div class="mt-6 pt-4 border-t border-slate-900 flex justify-between items-center text-xs text-slate-500">
+                                <span>External Auditor Es Teler 77 (10 Cabang Jabodetabek)</span>
+                                <span class="italic">Rizqah Maulidiyah</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- My Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-navy tracking-tight mb-4">Keahlian & Kemampuan</h2>
+                <div class="w-16 h-1 bg-gold mx-auto rounded-full mb-4"></div>
+                <p class="text-slate-600 text-base sm:text-lg">Kombinasi hard skills analitis, administratif, serta soft skills komunikasi profesional.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Hard Skills -->
+                <div class="bg-slate-50 border border-slate-200 p-8 rounded-2xl shadow-sm">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-lg bg-navy text-gold flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-cogs"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy">Hard Skills</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white border border-slate-200 text-navy font-medium text-xs px-3 py-1.5 rounded-lg shadow-sm">Microsoft Excel (Pivot Table, VLOOKUP)</span>
+                        <span class="bg-white border border-slate-200 text-navy font-medium text-xs px-3 py-1.5 rounded-lg shadow-sm">Microsoft Office</span>
+                        <span class="bg-white border border-slate-200 text-navy font-medium text-xs px-3 py-1.5 rounded-lg shadow-sm">Google Workspace & Sheet</span>
+                        <span class="bg-white border border-slate-200 text-navy font-medium text-xs px-3 py-1.5 rounded-lg shadow-sm">Stock Opname (SO)</span>
+                        <span class="bg-white border border-slate-200 text-navy font-medium text-xs px-3 py-1.5 rounded-lg shadow-sm">Data Verification</span>
+                        <span class="bg-white border border-slate-200 text-navy font-medium text-xs px-3 py-1.5 rounded-lg shadow-sm">Quality Control</span>
+                        <span class="bg-white border border-slate-200 text-navy font-medium text-xs px-3 py-1.5 rounded-lg shadow-sm">Operational & Internal Audit</span>
+                        <span class="bg-white border border-slate-200 text-navy font-medium text-xs px-3 py-1.5 rounded-lg shadow-sm">Inventory Management</span>
+                        <span class="bg-white border border-slate-200 text-navy font-medium text-xs px-3 py-1.5 rounded-lg shadow-sm">Cash Handling & Banking</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Software -->
+                <div class="bg-slate-50 border border-slate-200 p-8 rounded-2xl shadow-sm">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-lg bg-navy text-gold flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-toolbox"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy">Tools & Software</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white border border-slate-200 text-navy font-medium text-xs px-3 py-1.5 rounded-lg shadow-sm">Microsoft Excel</span>
+                        <span class="bg-white border border-slate-200 text-navy font-medium text-xs px-3 py-1.5 rounded-lg shadow-sm">Google Sheet</span>
+                        <span class="bg-white border border-slate-200 text-navy font-medium text-xs px-3 py-1.5 rounded-lg shadow-sm">Google Workspace</span>
+                        <span class="bg-white border border-slate-200 text-navy font-medium text-xs px-3 py-1.5 rounded-lg shadow-sm">Canva</span>
+                        <span class="bg-white border border-slate-200 text-navy font-medium text-xs px-3 py-1.5 rounded-lg shadow-sm">Adobe Photoshop</span>
+                        <span class="bg-white border border-slate-200 text-navy font-medium text-xs px-3 py-1.5 rounded-lg shadow-sm">Temenos T24 Banking</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="bg-slate-50 border border-slate-200 p-8 rounded-2xl shadow-sm">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-lg bg-navy text-gold flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy">Soft Skills</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white border border-slate-200 text-navy font-medium text-xs px-3 py-1.5 rounded-lg shadow-sm">Komunikasi Harian dengan Tim</span>
+                        <span class="bg-white border border-slate-200 text-navy font-medium text-xs px-3 py-1.5 rounded-lg shadow-sm">Pelayanan Nasabah & Publik</span>
+                        <span class="bg-white border border-slate-200 text-navy font-medium text-xs px-3 py-1.5 rounded-lg shadow-sm">Koordinasi Lintas Cabang</span>
+                        <span class="bg-white border border-slate-200 text-navy font-medium text-xs px-3 py-1.5 rounded-lg shadow-sm">Ketelitian & Validasi Data</span>
+                        <span class="bg-white border border-slate-200 text-navy font-medium text-xs px-3 py-1.5 rounded-lg shadow-sm">Problem Solving Operasional</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certificates Section -->
+    <section id="education" class="py-20 bg-slate-100/70 border-t border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                
+                <!-- Education -->
+                <div>
+                    <h3 class="text-2xl font-bold text-navy mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-graduation-cap text-gold"></i> Pendidikan
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                            <div>
+                                <span class="text-xs font-bold text-gold uppercase tracking-wider bg-gold/10 px-2.5 py-1 rounded-md">2016 – 2022</span>
+                                <h4 class="text-lg font-bold text-navy mt-2">S1 Teknik Informatika</h4>
+                                <p class="text-slate-600 text-sm">Universitas Pamulang (IPK 3.14)</p>
+                            </div>
+                            <button onclick="openCertificateModal('Ijazah - S1 Teknik Informatika Universitas Pamulang', 'Rizqah Maulidiyah_2016141158.jpg')" class="w-full sm:w-auto bg-navy hover:bg-slate-800 text-gold text-xs font-bold px-4 py-2.5 rounded-xl transition flex items-center justify-center gap-2 shadow shrink-0">
+                                <i class="fa-solid fa-eye"></i> Lihat Ijazah
+                            </button>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                            <div>
+                                <span class="text-xs font-bold text-gold uppercase tracking-wider bg-gold/10 px-2.5 py-1 rounded-md">2013 – 2016</span>
+                                <h4 class="text-lg font-bold text-navy mt-2">SMK Akuntansi</h4>
+                                <p class="text-slate-600 text-sm">SMK Al-Hidayah Cinere</p>
+                            </div>
+                            <button onclick="openCertificateModal('Ijazah - SMK Akuntansi Al-Hidayah', 'IJAZAH SMK _Rizqah.jpg')" class="w-full sm:w-auto bg-navy hover:bg-slate-800 text-gold text-xs font-bold px-4 py-2.5 rounded-xl transition flex items-center justify-center gap-2 shadow shrink-0">
+                                <i class="fa-solid fa-eye"></i> Lihat Ijazah
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificates with interactive preview buttons -->
+                <div>
+                    <h3 class="text-2xl font-bold text-navy mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-certificate text-gold"></i> Sertifikasi & Bukti Resmi
+                    </h3>
+                    <div class="space-y-4">
+                        <!-- Cert 1: BPS -->
+                        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-gold/10 text-gold flex items-center justify-center font-bold shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-award"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs font-semibold text-slate-500">Juni 2026 • Badan Pusat Statistik</span>
+                                    <h4 class="text-base font-bold text-navy">MOOC Pelatihan Petugas Sensus Ekonomi 2026 (SE2026)</h4>
+                                </div>
+                            </div>
+                            <button onclick="openCertificateModal('Sertifikat - BPS SE2026', 'Sertifikat-BPS RizqahM.jpg')" class="w-full sm:w-auto bg-navy hover:bg-slate-800 text-gold text-xs font-bold px-4 py-2.5 rounded-xl transition flex items-center justify-center gap-2 shadow shrink-0">
+                                <i class="fa-solid fa-eye"></i> Lihat Sertifikat
+                            </button>
+                        </div>
+
+                        <!-- Cert 2: RevoU -->
+                        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-gold/10 text-gold flex items-center justify-center font-bold shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-award"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs font-semibold text-slate-500">September 2025 • RevoU</span>
+                                    <h4 class="text-base font-bold text-navy">Intro to Data Analytics</h4>
+                                </div>
+                            </div>
+                            <button onclick="openCertificateModal('Sertifikat - RevoU Data Analytics', 'DAMC_rizqahmaulidiyah.jpg')" class="w-full sm:w-auto bg-navy hover:bg-slate-800 text-gold text-xs font-bold px-4 py-2.5 rounded-xl transition flex items-center justify-center gap-2 shadow shrink-0">
+                                <i class="fa-solid fa-eye"></i> Lihat Sertifikat
+                            </button>
+                        </div>
+
+                        <!-- Cert 3: BSI Teller -->
+                        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-gold/10 text-gold flex items-center justify-center font-bold shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-award"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs font-semibold text-slate-500">Okt 2017 – Okt 2018 • PT. Bank Syariah Mandiri</span>
+                                    <h4 class="text-base font-bold text-navy">Kriya Teller Training & Certification</h4>
+                                </div>
+                            </div>
+                            <button onclick="openCertificateModal('Sertifikat - Kriya Teller BSI', 'Sertifikat Teller Kriya.jpg')" class="w-full sm:w-auto bg-navy hover:bg-slate-800 text-gold text-xs font-bold px-4 py-2.5 rounded-xl transition flex items-center justify-center gap-2 shadow shrink-0">
+                                <i class="fa-solid fa-eye"></i> Lihat Sertifikat
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Preview Modal -->
+    <div id="cert-modal" class="fixed inset-0 z-50 hidden bg-navy/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full p-6 shadow-2xl border border-slate-200 relative transform transition-all">
+            <div class="flex items-center justify-between mb-4 pb-2 border-b border-slate-100">
+                <h3 id="modal-title" class="text-lg font-bold text-navy">Preview Sertifikat</h3>
+                <button onclick="closeCertificateModal()" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center transition">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+            <div class="flex justify-center items-center bg-slate-100 rounded-xl overflow-hidden p-2 max-h-[70vh]">
+                <img id="modal-img" src="" alt="Sertifikat" class="max-h-[65vh] object-contain rounded-lg shadow" onerror="this.src='https://placehold.co/600x400/0F172A/D4AF37?text=Gambar+Sertifikat+Tersedia'">
+            </div>
+            <div class="mt-4 text-center">
+                <button onclick="closeCertificateModal()" class="bg-navy hover:bg-slate-800 text-white font-semibold px-6 py-2.5 rounded-xl text-sm transition">
+                    Tutup Preview
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-navy tracking-tight mb-4">Hubungi Saya</h2>
+                <div class="w-16 h-1 bg-gold mx-auto rounded-full mb-4"></div>
+                <p class="text-slate-600 text-base sm:text-lg">Tertarik berkolaborasi atau mendiskusikan peluang profesional? Silakan hubungi kontak di bawah ini.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <a href="mailto:rizqahmaulidiyah@gmail.com" class="bg-slate-50 border border-slate-200 p-6 rounded-2xl text-center hover:border-gold transition group shadow-sm">
+                    <div class="w-12 h-12 rounded-xl bg-gold/10 text-gold flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-envelope text-lg"></i>
+                    </div>
+                    <h3 class="text-sm font-bold text-slate-500 mb-1">Email</h3>
+                    <p class="text-navy font-semibold text-sm break-all">rizqahmaulidiyah@gmail.com</p>
+                </a>
+                <a href="tel:+6283895399480" class="bg-slate-50 border border-slate-200 p-6 rounded-2xl text-center hover:border-gold transition group shadow-sm">
+                    <div class="w-12 h-12 rounded-xl bg-gold/10 text-gold flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-phone text-lg"></i>
+                    </div>
+                    <h3 class="text-sm font-bold text-slate-500 mb-1">Telepon / WhatsApp</h3>
+                    <p class="text-navy font-semibold text-sm">+62 838-9539-9480</p>
+                </a>
+                <div class="bg-slate-50 border border-slate-200 p-6 rounded-2xl text-center shadow-sm">
+                    <div class="w-12 h-12 rounded-xl bg-gold/10 text-gold flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-location-dot text-lg"></i>
+                    </div>
+                    <h3 class="text-sm font-bold text-slate-500 mb-1">Lokasi</h3>
+                    <p class="text-navy font-semibold text-sm">Depok, Jawa Barat</p>
+                </div>
+            </div>
+
+            <!-- Contact Form Box -->
+            <div class="bg-navy rounded-3xl p-8 sm:p-12 text-white shadow-xl relative overflow-hidden">
+                <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                <h3 class="text-2xl font-bold mb-6 relative z-10 text-center">Kirim Pesan Cepat</h3>
+                <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4 relative z-10 max-w-2xl mx-auto">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Nama Lengkap</label>
+                            <input type="text" required class="w-full bg-slate-800/80 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-gold transition" placeholder="Nama Anda">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Email / Kontak</label>
+                            <input type="text" required class="w-full bg-slate-800/80 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-gold transition" placeholder="Email / No HP Anda">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-1">Pesan</label>
+                        <textarea rows="4" required class="w-full bg-slate-800/80 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-gold transition" placeholder="Tuliskan pesan atau penawaran kerja..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-gold hover:bg-gold-light text-navy font-bold py-3.5 rounded-xl transition shadow-lg text-center">
+                        Kirim Pesan <i class="fa-solid fa-paper-plane ml-2"></i>
+                    </button>
+                    <div id="form-success" class="hidden text-center text-gold font-medium text-sm pt-2">
+                        Pesan Anda berhasil disimulasikan terkirim! Terima kasih.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-dark text-slate-400 py-12 border-t border-slate-800 text-center text-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="mb-2 font-bold text-white text-base">Rizqah Maulidiyah</p>
+            <p class="mb-6">Staff Administrasi, Operasional & Audit Profesional</p>
+            <p class="text-xs text-slate-500">&copy; 2026 Rizqah Maulidiyah. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Interactive Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Certificate Modal functions
+        function openCertificateModal(title, imgSrc) {
+            const modal = document.getElementById('cert-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalImg = document.getElementById('modal-img');
+            
+            modalTitle.textContent = title;
+            modalImg.src = imgSrc;
+            modal.classList.remove('hidden');
+        }
+
+        function closeCertificateModal() {
+            const modal = document.getElementById('cert-modal');
+            modal.classList.add('hidden');
+        }
+
+        // Close modal when clicking outside content
+        window.addEventListener('click', (e) => {
+            const modal = document.getElementById('cert-modal');
+            if (e.target === modal) {
+                closeCertificateModal();
+            }
+        });
+
+        // Preset default numbers for 10 branches when changed
+        const branchOmsetData = {
+            "Cabang Cinere Utama": { edc: 4200000, online: 5100000, cash: 3100000 },
+            "Cabang Pondok Labu": { edc: 3800000, online: 4500000, cash: 2900000 },
+            "Cabang Depok Town Center": { edc: 3500000, online: 4000000, cash: 2500000 },
+            "Cabang Margo City": { edc: 6500000, online: 8200000, cash: 4800000 },
+            "Cabang Margonda Raya": { edc: 5100000, online: 6300000, cash: 3700000 },
+            "Cabang Lebak Bulus": { edc: 3900000, online: 4400000, cash: 2800000 },
+            "Cabang Cilandak Town Square": { edc: 5800000, online: 7100000, cash: 4200000 },
+            "Cabang Fatmawati": { edc: 4100000, online: 4900000, cash: 3000000 },
+            "Cabang ITC Fatmawati": { edc: 3300000, online: 3800000, cash: 2400000 },
+            "Cabang Senayan City": { edc: 7200000, online: 9400000, cash: 5500000 }
+        };
+
+        function updateDefaultBranchOmset() {
+            const branch = document.getElementById('sim-branch').value;
+            const data = branchOmsetData[branch];
+            if (data) {
+                document.getElementById('sim-edc').value = data.edc;
+                document.getElementById('sim-online').value = data.online;
+                document.getElementById('sim-cash').value = data.cash;
+            }
+        }
+
+        // Interactive Simulation Tool for Omset & Reconciliation
+        function runOmsetSimulation() {
+            const branch = document.getElementById('sim-branch').value;
+            const edc = parseFloat(document.getElementById('sim-edc').value) || 0;
+            const online = parseFloat(document.getElementById('sim-online').value) || 0;
+            const cash = parseFloat(document.getElementById('sim-cash').value) || 0;
+
+            const totalOmset = edc + online + cash;
+            const formattedTotal = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 }).format(totalOmset);
+            const formattedEdc = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 }).format(edc);
+            const formattedOnline = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 }).format(online);
+            const formattedCash = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 }).format(cash);
+
+            let statusText = "Balance & Sesuai SOP";
+            let statusColor = "text-emerald-400";
+            let notes = `Pemeriksaan omset ${branch}:\n• Settlement EDC Bank: ${formattedEdc}\n• Online Food (Grab/GoFood/Shopee): ${formattedOnline}\n• Kasir Tunai Fisik: ${formattedCash}\n\nKesimpulan: Seluruh dokumen faktur, bon, dan rekonsiliasi Google Sheet/Excel telah diverifikasi dan siap sebelum jam tutup outlet.`;
+
+            document.getElementById('out-total').textContent = formattedTotal;
+            const statusEl = document.getElementById('out-status');
+            statusEl.textContent = statusText;
+            statusEl.className = `text-sm font-bold ${statusColor}`;
+            document.getElementById('out-accuracy').textContent = "100%";
+            document.getElementById('out-notes').innerText = notes;
+            document.getElementById('sim-timestamp').textContent = "Terakhir diaudit: " + new Date().toLocaleTimeString('id-ID');
+        }
+
+        // Form Submit Simulation (No alert())
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const successMsg = document.getElementById('form-success');
+            successMsg.classList.remove('hidden');
+            document.getElementById('contact-form').reset();
+            setTimeout(() => {
+                successMsg.classList.add('hidden');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
